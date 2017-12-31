@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cmsc436.cmsc436project.MainActivity">
+
+
+    <Button
+        android:id="@+id/ruleSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="ruleSet"
+        android:text="Rule Set"
+        android:layout_marginTop="73dp"
+        android:layout_below="@+id/onOff"
+        android:layout_alignEnd="@+id/activate_rules"
+        android:layout_marginEnd="14dp" />
+
+    <Button
+        android:id="@+id/apps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="apps"
+        android:text="Apps"
+        android:layout_alignBaseline="@+id/ruleSet"
+        android:layout_alignBottom="@+id/ruleSet"
+        android:layout_alignStart="@+id/changePass"
+        android:layout_marginStart="22dp" />
+
+    <Button
+        android:id="@+id/changePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="password_reset"
+        android:text="Change Password"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/apps"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:background="@android:color/holo_green_light"
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop"
+        android:layout_alignStart="@+id/apps"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/onOff" />
+
+    <TextView
+        android:id="@+id/onOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Lock Deactive"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Start or Stop the locks"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/start"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/activate_rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="Activate Rule "
+        android:layout_alignBaseline="@+id/changePass"
+        android:layout_alignBottom="@+id/changePass"
+        android:layout_alignStart="@+id/stop" />
+
+</RelativeLayout>

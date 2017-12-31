@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoginScreen</string>
+    <string name="login_name">Username</string>
+    <string name="login_password">Password</string>
+    <string name="enter_username_and_password">Enter username and password</string>
+    <string name="login_button_txt">LOGIN</string>
+    <string name="forgot_password_txt">Forgot Password</string>
+</resources>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cmsc436.cmsc436project.ModifyRuleSet">
+
+    <!-- Time-->
+
+    <TextView
+        android:id="@+id/start_and_end_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:text="Start and End Times"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/start_and_end_times"
+        android:layout_marginTop="8dp"
+        android:text="00:00:00" />
+
+    <TextView
+        android:id="@+id/end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/start_and_end_times"
+        android:layout_marginTop="8dp"
+        android:text="00:00:00" />
+
+    <Button
+        android:id="@+id/start_time_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/start_time"
+        android:onClick="pickStartTime"
+        android:text="Choose Start Time" />
+
+    <Button
+        android:id="@+id/end_time_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose End Time"
+        android:onClick="pickEndTime"
+        android:layout_alignTop="@+id/start_time_picker_button"
+        android:layout_alignParentEnd="true" />
+
+    <!-- Buttons -->
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:background="#FFEB3B"
+        android:onClick="cancelRuleSet"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="saveRuleSet"
+        android:background="#64B5F6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="deleteRuleSet"
+        android:background="#EF5350"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
